@@ -1,0 +1,43 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Search</a>
+        <a href="pokemon.html">Pokemon Details</a>
+        <a href="chart.html">Base Experience Chart</a>
+    </nav>
+    
+    <div class="container">
+        <h1>Pokemon Details</h1>
+        <div class="search-container">
+            <input type="text" id="pokemon-input" placeholder="Enter Pokemon name">
+            <button id="fetch-btn">Fetch Details</button>
+        </div>
+        
+        <div id="pokemon-details" class="pokemon-details-container hidden">
+            <div class="sprites">
+                <img id="front-sprite" src="" alt="Front Sprite">
+                <img id="back-sprite" src="" alt="Back Sprite">
+            </div>
+            <h2 id="pokemon-name"></h2>
+            <div class="pokemon-details">
+                <p>Height: <span id="height"></span></p>
+                <p>Weight: <span id="weight"></span></p>
+                <p>Base Experience: <span id="base-experience"></span></p>
+                <p>Types: <span id="types"></span></p>
+                <p>Abilities: <span id="abilities"></span></p>
+            </div>
+        </div>
+        
+        <div id="error-message" class="error hidden"></div>
+    </div>
+
+    <script src="pokemon-details.js"></script>
+</body>
+</html>

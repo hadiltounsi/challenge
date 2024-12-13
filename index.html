@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Search</a>
+      <a href="details.html">Pokemon Details</a>
+    </nav>
+
+    <!-- input and search button -->
+    <div class="container">
+      <h1>Pokemon Search</h1>
+      <div class="search-container">
+        <input
+          type="text"
+          id="pokemon-search"
+          placeholder="Enter Pokemon name"
+        />
+        <button id="search-btn">Search</button>
+      </div>
+
+      <!-- pokemon card -->
+      <div id="pokemon-card" class="pokemon-card hidden">
+        <img id="pokemon-image" src="" alt="Pokemon" />
+        <h2 id="pokemon-name"></h2>
+        <div class="pokemon-details">
+          <p>Height: <span id="pokemon-height"></span></p>
+          <p>Weight: <span id="pokemon-weight"></span></p>
+          <p>Base Experience: <span id="pokemon-base-exp"></span></p>
+          <p>Types: <span id="pokemon-types"></span></p>
+          <p>Abilities: <span id="pokemon-abilities"></span></p>
+        </div>
+      </div>
+
+      <!-- error message -->
+      <div id="error-message" class="error hidden"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
